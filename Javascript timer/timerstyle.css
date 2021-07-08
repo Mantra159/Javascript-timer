@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato",sans-serif;
+    background-color: black;
+}
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+    animation: color-change 10s infinite;
+}
+@keyframes color-change {
+    0% { color: #62FC96; }
+    33% { color: #00D2D0; }
+    66% { color: #4A06F7; }
+    100% { color: #62fc96}
+
+}
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.day,.hour,.minute,.second {
+    font-size: 3rem;
+}
+
+.waiting {
+    height: 50vh;
+}
